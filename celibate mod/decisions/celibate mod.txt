@@ -1,0 +1,23 @@
+targetted_decisions = {
+	cheat_celibate = {
+		only_playable = yes
+		filter = realm
+		ai_target_filter = none
+		ai_check_interval = 99999
+
+		from_potential = {
+			is_playable = yes
+		}
+
+		potential = {
+			NOT = { trait = celibate }
+		}
+
+		allow = {}
+
+                effect = {
+                        add_trait = celibate
+                }
+        }
+    }
+}
